@@ -14,6 +14,25 @@ function showCookieBanner() {
             <div class="cookie-buttons">
                 <button class="btn btn-primary btn-sm" onclick="acceptCookies()">Aceptar</button>
                 <button class="btn btn-outline-secondary btn-sm" onclick="rejectCookies()">Rechazar</button>
+                <button class="btn btn-outline-info btn-sm" onclick="showCookieManager(event)">Gestionar Cookies</button>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(banner);
+}
+
+function showCookieManager(event) {
+    event.preventDefault();
+    const currentConsent = getCookie('cookieConsent');
+    const banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.innerHTML = `
+        <div class="cookie-content">
+            <p>Configuración actual de cookies: ${currentConsent ? currentConsent : 'No configurado'}</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-primary btn-sm" onclick="acceptCookies()">Aceptar Cookies</button>
+                <button class="btn btn-outline-secondary btn-sm" onclick="rejectCookies()">Rechazar Cookies</button>
+                <button class="btn btn-outline-danger btn-sm" onclick="hideCookieBanner()">Cerrar</button>
             </div>
         </div>
     `;
