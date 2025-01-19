@@ -122,3 +122,38 @@ footer a:hover {
         justify-content: center;
     }
 }
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 90px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #20ba5a;
+    color: #FFF;
+    transform: translateY(-3px);
+}
+
+/* Ensure it doesn't overlap with cookie banner */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 120px;
+        right: 20px;
+    }
+}
