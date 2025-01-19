@@ -15,6 +15,18 @@ def about():
 def services():
     return render_template('services.html')
 
+@app.route('/services/professional-lighting')
+def professional_lighting():
+    return render_template('services/professional_lighting.html')
+
+@app.route('/services/special-effects')
+def special_effects():
+    return render_template('services/special_effects.html')
+
+@app.route('/services/event-design')
+def event_design():
+    return render_template('services/event_design.html')
+
 @app.route('/gallery')
 def gallery():
     return render_template('gallery.html')
