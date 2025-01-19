@@ -50,25 +50,57 @@
 
     {% block content %}{% endblock %}
 
-    <footer class="bg-dark text-light py-4 mt-5">
+    <footer class="bg-dark text-light py-5 mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Event Lighting Pro</h5>
-                    <p>Professional lighting and special effects for your events</p>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Event Lighting Pro</h5>
+                    <p>Transformamos tus eventos con iluminación profesional y efectos especiales de última generación.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://facebook.com/eventlightingpro" class="me-3 text-light" target="_blank">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="https://instagram.com/eventlightingpro" class="me-3 text-light" target="_blank">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://twitter.com/eventlightingpro" class="me-3 text-light" target="_blank">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/eventlightingpro" class="me-3 text-light" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Servicios Principales</h5>
                     <ul class="list-unstyled">
-                        <li><a href="{{ url_for('privacy') }}" class="text-light">Privacy Policy</a></li>
-                        <li><a href="{{ url_for('terms') }}" class="text-light">Terms of Service</a></li>
+                        <li class="mb-2"><i class="fas fa-lightbulb me-2"></i>Iluminación LED</li>
+                        <li class="mb-2"><i class="fas fa-magic me-2"></i>Efectos Especiales</li>
+                        <li class="mb-2"><i class="fas fa-star me-2"></i>Decoración Temática</li>
+                        <li class="mb-2"><i class="fas fa-cog me-2"></i>Consultoría Técnica</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Contact</h5>
-                    <p>Email: info@eventlightingpro.com<br>
-                    Phone: (555) 123-4567</p>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Calle Principal</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>info@eventlightingpro.com</li>
+                        <li class="mb-2"><i class="fas fa-clock me-2"></i>Lun-Vie: 9AM-6PM</li>
+                    </ul>
                 </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Enlaces Útiles</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="{{ url_for('about') }}" class="text-light">Sobre Nosotros</a></li>
+                        <li class="mb-2"><a href="{{ url_for('gallery') }}" class="text-light">Galería</a></li>
+                        <li class="mb-2"><a href="{{ url_for('privacy') }}" class="text-light">Política de Privacidad</a></li>
+                        <li class="mb-2"><a href="{{ url_for('terms') }}" class="text-light">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-4 mt-4 text-center">
+                <p class="mb-0">&copy; 2025 Event Lighting Pro. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
