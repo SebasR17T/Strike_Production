@@ -1,42 +1,42 @@
 {% extends "base.html" %}
-{% block title %}Contact Us{% endblock %}
+{% block title %}Contacto{% endblock %}
 
 {% block content %}
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-6">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for your event lighting and special effects needs.</p>
+            <h2>Contáctanos</h2>
+            <p>Ponte en contacto con nosotros para tus necesidades de iluminación y efectos especiales.</p>
             
             <form method="POST" class="needs-validation" novalidate>
                 {{ form.csrf_token }}
                 <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    {{ form.name(class="form-control", placeholder="Your Name") }}
+                    <label for="name" class="form-label">Nombre</label>
+                    {{ form.name(class="form-control", placeholder="Tu Nombre") }}
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    {{ form.email(class="form-control", placeholder="Your Email") }}
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    {{ form.email(class="form-control", placeholder="Tu Correo") }}
                 </div>
                 <div class="mb-3">
-                    <label for="phone" class="form-label">Phone</label>
-                    {{ form.phone(class="form-control", placeholder="Your Phone Number") }}
+                    <label for="phone" class="form-label">Teléfono</label>
+                    {{ form.phone(class="form-control", placeholder="Tu Teléfono") }}
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    {{ form.message(class="form-control", rows="5", placeholder="Your Message") }}
+                    <label for="message" class="form-label">Mensaje</label>
+                    {{ form.message(class="form-control", rows="5", placeholder="Tu Mensaje") }}
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
             </form>
         </div>
         <div class="col-lg-6">
             <div class="card mt-4">
                 <div class="card-body">
-                    <h5 class="card-title">Contact Information</h5>
+                    <h5 class="card-title">Información de Contacto</h5>
                     <p class="card-text">
-                        <i class="fas fa-envelope"></i> Email: info@eventlightingpro.com<br>
-                        <i class="fas fa-phone"></i> Phone: (555) 123-4567<br>
-                        <i class="fas fa-clock"></i> Hours: Monday-Friday: 9AM-6PM
+                        <i class="fas fa-envelope"></i> Correo: info@eventlightingpro.com<br>
+                        <i class="fas fa-phone"></i> Teléfono: (555) 123-4567<br>
+                        <i class="fas fa-clock"></i> Horario: Lunes-Viernes: 9AM-6PM
                     </p>
                 </div>
             </div>
